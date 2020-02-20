@@ -6,70 +6,89 @@
 
 ## Tentang E-Pembayaran SPP
 
-E-Pembayaran SPP adalah sebuah aplikasi untuk mempermudah sebuah sekolah dalam mendata pemabayar SPP para siswa/siswinya, dengan menggunakan aplikasi ini tentunya akan lebih mengurangi biaya dalam pendataan, dan mengurangi penggunaan kertas yang dimana pohon untuk sekarang ini adalah Go Green bagi kehidupan manusia.
+E-Pembayaran SPP adalah sebuah aplikasi untuk mempermudah sebuah sekolah dalam mendata pembayaran SPP para siswa/siswinya, dengan menggunakan aplikasi ini tentunya akan lebih mengurangi biaya dalam pendataan pembayaran SPP, dan mengurangi penggunaan kertas yang dimana pohon adalah GO GREEN bagi kehidupan manusia.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Aplikasi ini memiliki 3 hak akses level login, yang diantaranya :
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Level Admin
+- Login
+- Logout
+- CRUD data siswa
+- CRUD data petugas
+- CRUD data Kelas
+- CRUD data SPP
+- Entri Transaksi Pembayaran
+- Lihat Histori Pembayaran
+- Generate Laporan
 
-## Learning Laravel
+Level Petugas
+- Login
+- Logout
+- Entri Transaksi Pembayaran
+- Lihat Histori Pembayaran
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Level Siswa
+- Login
+- Logout
+- Lihat Histori Pembayaran
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Beberapa fungsi di laravel yang di gunakan untuk membuat aplikasi ini.
 
-## Laravel Sponsors
+##Basic
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Routing
+https://laravel.com/docs/5.8/routing
+- Middleware
+https://laravel.com/docs/5.8/middleware
+- CSRF protection
+https://laravel.com/docs/5.8/csrf
+- Controllers
+https://laravel.com/docs/5.8/controllers
+-  Requests
+https://laravel.com/docs/5.8/requests
+- Views
+https://laravel.com/docs/5.8/views
+- Session
+https://laravel.com/docs/5.8/session
+- Validation
+https://laravel.com/docs/5.8/validation
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+##Frontend
 
-## Contributing
+- Blade Templates
+https://laravel.com/docs/5.8/blade
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+##Security
 
-## Code of Conduct
+- authentication
+https://laravel.com/docs/5.8/authentication
+- Hashing
+https://laravel.com/docs/5.8/hashing
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+##Databases
 
-## Security Vulnerabilities
+- Query Builder
+https://laravel.com/docs/5.8/queries
+- Pagination
+https://laravel.com/docs/5.8/pagination
+- Migrations
+https://laravel.com/docs/5.8/migrations
+- Seeder
+https://laravel.com/docs/5.8/seeding
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+##Eloquent ORM
 
-## License
+- Relationships
+https://laravel.com/docs/5.8/eloquent-relationships
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+##Framework Frontend
+
+- Bootstrap
+https://getbootstrap.com/
+
+## Package Pendukung
+
+- Sweet Alert 2
+https://sweetalert2.github.io
+- Dompdf
+https://dompdf.github.io
