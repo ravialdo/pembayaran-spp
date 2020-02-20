@@ -119,8 +119,8 @@ Level Siswa
 
 ## Gambaran
 
-<p align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/2.PNG" width="200"></p>
-<p align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/3.PNG" width="200"></p>
+<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/2.PNG" width="200"></span>
+<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/3.PNG" width="200"></span>
 
 ## Penutup
 
