@@ -102,7 +102,7 @@ $ php artisan migrate --seed <br>
 $ php artisan serve <br>
 
 Catatan :
-Lakukan terlebih dahulu pembuatan database dengan nama db_spp sebelum melakukan migrate.
+lakukan terlebih dahulu pembuatan database dengan nama db_spp sebelum melakukan migrate.
 
 ## Akun Untuk Login
 
