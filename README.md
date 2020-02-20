@@ -95,11 +95,11 @@ https://dompdf.github.io
 
 ## Cara Install Project E-Pembayaran SPP via GIT
 
-$ git clone https://github.com/pembayaran-spp.git
-$ cd pembayaran-spp
-$ composer update
-$ php artisan migrate --seed
-$ php artisan serve
+$ git clone https://github.com/pembayaran-spp.git <br>
+$ cd pembayaran-spp <br>
+$ composer update <br>
+$ php artisan migrate --seed <br>
+$ php artisan serve <br>
 
 Lakukan terlebih dahulu pembuatan database dengan nama db_spp sebelum melakukan migrate.
 
