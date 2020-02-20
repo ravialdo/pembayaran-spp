@@ -34,7 +34,7 @@ Level Siswa
 
 Beberapa fungsi di laravel yang di gunakan untuk membuat aplikasi ini.
 
-##Basic
+## Basic
 
 - Routing
 https://laravel.com/docs/5.8/routing
@@ -53,19 +53,19 @@ https://laravel.com/docs/5.8/session
 - Validation
 https://laravel.com/docs/5.8/validation
 
-##Frontend
+## Frontend
 
 - Blade Templates
 https://laravel.com/docs/5.8/blade
 
-##Security
+## Security
 
 - authentication
 https://laravel.com/docs/5.8/authentication
 - Hashing
 https://laravel.com/docs/5.8/hashing
 
-##Databases
+## Databases
 
 - Query Builder
 https://laravel.com/docs/5.8/queries
@@ -76,12 +76,12 @@ https://laravel.com/docs/5.8/migrations
 - Seeder
 https://laravel.com/docs/5.8/seeding
 
-##Eloquent ORM
+## Eloquent ORM
 
 - Relationships
 https://laravel.com/docs/5.8/eloquent-relationships
 
-##Framework Frontend
+## Framework Frontend
 
 - Bootstrap
 https://getbootstrap.com/
@@ -92,3 +92,31 @@ https://getbootstrap.com/
 https://sweetalert2.github.io
 - Dompdf
 https://dompdf.github.io
+
+## Cara Install Project E-Pembayaran SPP via GIT
+
+$ git clone https://github.com/pembayaran-spp.git
+$ cd pembayaran-spp
+$ composer update
+$ php artisan migrate --seed
+$ php artisan serve
+
+Lakukan terlebih dahulu pembuatan database dengan nama db_spp sebelum melakukan migrate.
+
+## Akun Untuk Login
+
+Level Admin
+- email        : admin@spp.com
+-  password : admin
+
+Level Petugas
+- email       : petugas@spp.com
+- password : petugas
+
+Level Siswa
+- NISN  : 123456789876
+- Nama : siswa
+
+## Penutup
+
+Semoga bermanfaat, dan dapat menambah wawasan kalian.
