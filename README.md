@@ -132,6 +132,7 @@ Level Siswa
  <span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/11.PNG" width="300"></span>
  <apan><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/12.PNG" width="300"></span>
 </p>
+
 ## Penutup
 
 Semoga bermanfaat, dan dapat menambah wawasan kalian.
