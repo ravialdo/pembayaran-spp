@@ -119,17 +119,18 @@ Level Siswa
 
 ## Gambar
 
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/2.PNG" width="300"></span>
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/3.PNG" width="300"></span>
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/4.PNG" width="300"></span>
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/5.PNG" width="300"></span>
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/6.PNG" width="300"></span>
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/7.PNG" width="300"></apan>
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/8.PNG" width="300"></span>
-<apan align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/9.PNG" width="300"></span>
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/10.PNG" width="300"></span>
-<span align="center"><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/11.PNG" width="300"></span>
-
+<p align="center">
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/2.PNG" width="300"></span>
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/3.PNG" width="300"></span>
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/4.PNG" width="300"></span>
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/5.PNG" width="300"></span>
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/6.PNG" width="300"></span>
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/7.PNG" width="300"></apan>
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/8.PNG" width="300"></span>
+<apan><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/9.PNG" width="300"></span>
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/10.PNG" width="300"></span>
+<span><img src="https://github.com/ravialdo/pembayaran-spp/blob/master/public/img/11.PNG" width="300"></span>
+</p>
 ## Penutup
 
 Semoga bermanfaat, dan dapat menambah wawasan kalian.
