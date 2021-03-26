@@ -95,7 +95,7 @@ https://dompdf.github.io
 
 ## Cara Install Project E-Pembayaran SPP via GIT
 
-$ git clone https://github.com/pembayaran-spp.git <br>
+$ git clone https://github.com/ravialdo/pembayaran-spp.git <br>
 $ cd pembayaran-spp <br>
 $ composer update <br>
 $ php artisan migrate --seed <br>
