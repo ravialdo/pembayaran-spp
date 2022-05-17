@@ -63,7 +63,7 @@
                                         <tr>					    
                                             <th scope="row">{{ $i }}</th>
                                             <td>{{ $value->tahun }}</td>
-								    <td>{{ $value->nominal }}</td>
+								    <td>{{ "Rp. " . number_format($value->nominal) }}</td>
                                             <td>{{ $value->created_at->format('d M, Y') }}</td>
 					
                                             <td>										                           

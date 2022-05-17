@@ -26,6 +26,7 @@
                                             <th scope="col">KELAS</th>
 								    <th scope="col">NOMOR TELEPON</th>
 								    <th scope="col">ALAMAT</th>
+								    <th scope="col">SPP</th>
 								    <th scope="col"></th>                                        
                                         </tr>
                                     </thead>
@@ -42,6 +43,7 @@
                                             <td>{{ $value->kelas->nama_kelas }}</td>
 								    <td>{{ $value->nomor_telp }}</td>
 								    <td>{{ $value->alamat }}</td>
+								    <td>{{ "Tahun " . $value->spp->tahun . "- Rp. " . number_format($value->spp->nominal)}}</td>
                                             <td>										                           
                                	 		  <div class="hide-menu">
                                     			<a href="javascript:void(0)" class="text-dark" id="actiondd" role="button" data-toggle="dropdown">
