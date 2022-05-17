@@ -45,14 +45,15 @@ class UserTableSeeder extends Seeder
             'nominal' => 200000
         ]);
 
-        // Siswa::create([
-        //     'nisn' => '2019804',
-        //     'nis'  => '2019804089',
-        //     'nama' => 'Indra Faozi',
-        //     'id_kelas' => 1,
-        //     'nomor_telp' => '089689957106',
-        //     'alamat' => 'Majalengka',
-        // ]);
+        Siswa::create([
+            'nisn' => '2019804089',
+            'nis'  => '2019804089',
+            'nama' => 'Indra Faozi',
+            'id_kelas' => 1,
+            'nomor_telp' => '089689957106',
+            'alamat' => 'Tangerang',
+            'id_spp' => 1
+        ]);
 
         // Pembayaran::create([
         //     'id_petugas' => 2,
