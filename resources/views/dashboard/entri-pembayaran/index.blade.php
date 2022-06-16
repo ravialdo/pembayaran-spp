@@ -19,7 +19,7 @@
                   
                      <div class="form-group">
                         <label>NISN Siswa</label>
-                        <input type="text" class="form-control @error('nisn') is-invalid @enderror" name="nisn">
+                        <input type="text" class="form-control @error('nisn') is-invalid @enderror" name="nisn" value="{{old("nisn")}}">
                         <span class="text-danger">@error('nisn') {{ $message }} @enderror</span>
                      </div>
                      
@@ -50,7 +50,7 @@
                   
                      <div class="form-group">
                        <label>Jumlah Bayar</label>
-                       <input type="text" class="form-control @error('jumlah_bayar') is-invalid @enderror" name="jumlah_bayar">
+                       <input type="text" class="form-control @error('jumlah_bayar') is-invalid @enderror" name="jumlah_bayar" value="{{old("jumlah_bayar")}}">
                        <span class="text-danger">@error('jumlah_bayar') {{ $message }} @enderror</span>
                     </div>
                   
@@ -100,7 +100,7 @@
                                             <td>{{ $value->siswa->nama }}</td>
                                             <td>{{ "Rp. " . number_format($value->siswa->spp->nominal) }}</td>
                                             <td>{{ "Rp. " . number_format( $value->jumlah_bayar) }}</td>
-                                            <td>{{ date('d M, Y', strtotime($value->spp_bulan)) }}</td>
+                                            <td>{{ date('M, Y', strtotime($value->spp_bulan)) }}</td>
                                             <td>{{ $value->created_at->format('d M, Y') }}</td>
                                             <td>										                           
                                	 		  <div class="hide-menu">

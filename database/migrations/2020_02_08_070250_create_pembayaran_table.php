@@ -19,7 +19,7 @@ class CreatePembayaranTable extends Migration
             $table->foreign('id_petugas')->references('id')->on('users');
             $table->bigInteger('id_siswa')->unsigned();
             $table->foreign('id_siswa')->references('id')->on('siswa')->onDelete('cascade');
-            $table->dateTime('spp_bulan');
+            $table->date('spp_bulan');
           #$table->date('tgl_bayar');
          #$table->string('bulan_bayar', 8);
          #$table->string('tahun_bayar', 4);

@@ -7,6 +7,7 @@ use App\Pembayaran;
 use App\User;
 use App\Siswa;
 use Alert;
+use Symfony\Component\Console\Input\Input;
 
 class PembayaranController extends Controller
 {
@@ -51,15 +52,16 @@ class PembayaranController extends Controller
      */
     public function store(Request $req)
     {
-      
-        $message = [
+      $date_month = $req->spp_bulan;
+
+         $message = [
             'required' => ':attribute harus di isi',
             'numeric' => ':attribute harus berupa angka',
             'min' => ':attribute minimal harus :min angka',
             'max' => ':attribute maksimal harus :max angka',
          ];
          
-        $req->validate([
+      $req->validate([
             'nisn' => 'required',
             'spp_bulan' => 'required',
             'jumlah_bayar' => 'required|numeric'
@@ -67,9 +69,26 @@ class PembayaranController extends Controller
          
          if(Siswa::where('nisn',$req->nisn)->exists() == false):
             Alert::error('Terjadi Kesalahan!', 'Siswa dengan NISN ini Tidak di Temukan');
-           return back();
+            return redirect()->back()->withInput();
             exit;
          endif;
+
+         if($date_month > date("m")) {
+            $month = $this->string_month($date_month);
+            Alert::warning("Terjadi kesalahan!", "Maaf, pembayaran bulan " . $month . " belum dibuka");
+            return redirect()->back()->withInput();
+            exit;
+         }else{
+            $year = date("Y");
+            $date_payment = $year . "-" . $req->spp_bulan . "-01";
+            $siswa = Siswa::where("nisn", $req->nisn)->first();
+            $pembayaran = Pembayaran::where("id_siswa", $siswa->id)->where("spp_bulan", $date_payment)->first();
+            if($pembayaran){
+               $month = $this->string_month($date_month);
+               Alert::warning("Terjadi kesalahan!", "Maaf, pembayaran bulan " . $month . " telah dibayar");
+               return redirect()->back()->withInput();
+               exit;
+            }
             
          
          $siswa = Siswa::where('nisn',$req->nisn)->get();
@@ -81,14 +100,15 @@ class PembayaranController extends Controller
          Pembayaran::create([
             'id_petugas' => auth()->user()->id,
             'id_siswa' => $id_siswa,
-            'spp_bulan' => $req->spp_bulan,
+            'spp_bulan' => date("Y-$req->spp_bulan-01"),
             'jumlah_bayar' => $req->jumlah_bayar,
          ]);
          
          Alert::success('Berhasil!', 'Pembayaran Berhasil di Tambahkan!');
          
          return back();
-    }
+      }
+   }
 
     /**
      * Display the specified resource.
@@ -184,4 +204,51 @@ class PembayaranController extends Controller
          
          return back();
     }
+
+   public function string_month($date_month){
+      switch ($date_month) {
+         case '01':
+            $date_month = "Januari";
+         break;
+         case '02':
+            $date_month = "Februari";
+         break;
+         case '03':
+            $date_month = "Maret";
+         break;
+         case '04':
+            $date_month = "April";
+         break;
+         case '05':
+            $date_month = "Mei";
+         break;
+         case '06':
+            $date_month = "Juni";
+         break;
+         case '07':
+            $date_month = "Juli";
+         break;
+         case '08':
+            $date_month = "Agustus";
+         break;
+         case '09':
+            $date_month = "September";
+         break;
+         case '10':
+            $date_month = "Oktober";
+         break;
+         case '11':
+            $date_month = "November";
+         break;
+         case '12':
+            $date_month = "Desember";
+         break;
+         
+         default:
+            "Kode bulan salah!";
+            break;
+      }
+
+      return $date_month;
+   }
 }
